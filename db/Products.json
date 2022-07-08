@@ -1,0 +1,70 @@
+{
+    "products" : [
+        {
+            "ProductID" : 1,
+            "name" : "Tshirt",
+            "description" : "Clothing",
+            "price" : 3000.00,
+            "image" : "https://images.unsplash.com/photo-1598032895397-b9472444bf93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hpcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "ratings" : "4.5",
+            "size": "M",
+            "brand" : "Nike",
+            "ideal_for" : "Men"
+        },
+        {
+            "ProductID" : 2,
+            "name" : "Skirt",
+            "description" : "Clothing",
+            "price" : 1000.00,
+            "image" : "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2tpcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "ratings" : "4",
+            "size": "S",
+            "brand" : "Nike",
+            "ideal_for" : "Women"
+        },
+        {
+            "ProductID" : 3,
+            "name" : "Dress",
+            "description" : "Clothing",
+            "price" : 3500.00,
+            "image" : "https://images.unsplash.com/flagged/photo-1585052201332-b8c0ce30972f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJlc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "ratings" : "4",
+            "size": "M",
+            "brand" : "Biba",
+            "ideal_for" : "Women"
+        },
+        {
+            "ProductID" : 4,
+            "name" : "Pant",
+            "description" : "Clothing",
+            "price" : 2000.00,
+            "image" : "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            "ratings" : "3.5",
+            "size": "L",
+            "brand" : "HnM",
+            "ideal_for" : "Women"
+        },
+        {
+            "ProductID" : 5,
+            "name" : "Pant",
+            "description" : "Clothing",
+            "price" : 3000.00,
+            "image" : "https://images.unsplash.com/photo-1584865288642-42078afe6942?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGFudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            "ratings" : "4",
+            "size": "L",
+            "brand" : "HnM",
+            "ideal_for" : "Men"
+        },
+        {
+            "ProductID" : 6,
+            "name" : "Tshirt",
+            "description" : "Clothing",
+            "price" : 1200.00,
+            "image" : "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            "ratings" : "4",
+            "size": "S",
+            "brand" : "HnM",
+            "ideal_for" : "Men"
+        }
+    ]
+}
