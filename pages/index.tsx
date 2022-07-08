@@ -7,40 +7,42 @@ import Sidebar from "../components/Sidebar";
 import { products } from "../db/Products.json";
 import { Products } from "../typings";
 
-const init = products
+const init = products;
 
-const reducer = (state : typeof init, action: string) => {
+const reducer = (state: typeof init, action: string) => {
   switch (action) {
     case "LTH":
-      console.log("LTH")
-      return [...products.sort((a, b ) => a.price - b.price)];
+      console.log("LTH");
+      return [...products.sort((a, b) => a.price - b.price)];
     case "HTL":
-      console.log("HTL")
+      console.log("HTL");
       return [...products.sort((a, b) => b.price - a.price)];
     case "S":
-      return products.filter(product => product.size === "S");
+      return products.filter((product) => product.size === "S");
     case "M":
-      return products.filter(product => product.size === "M");
+      return products.filter((product) => product.size === "M");
     case "L":
-      return products.filter(product => product.size === "L");
+      return products.filter((product) => product.size === "L");
     case "Nike":
-      return products.filter(product => product.brand === "Nike");
+      return products.filter((product) => product.brand === "Nike");
     case "HnM":
-      return products.filter(product => product.brand === "HnM");
+      return products.filter((product) => product.brand === "HnM");
     case "Men":
-      return products.filter(product => product.ideal_for === "Men");
-      case "Women":
-        return products.filter(product => product.ideal_for === "Women");
-      default:
-        return products;
+      return products.filter((product) => product.ideal_for === "Men");
+    case "Women":
+      return products.filter((product) => product.ideal_for === "Women");
+    case "clear":
+      return products;
+    default:
+      return products;
   }
-}
+};
 
 const Home: NextPage = () => {
-  const [prod, setProd] = useState(products)
-  const [state , dispatch] = useReducer(reducer, products);
+  const [prod, setProd] = useState(products);
+  const [state, dispatch] = useReducer(reducer, products);
 
-  console.log(state)
+  console.log(state);
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
@@ -51,15 +53,12 @@ const Home: NextPage = () => {
         <div className="container px-6 py-8 mx-auto">
           <div className="lg:flex lg:-mx-2">
             <div className="space-y-3 lg:w-1/5 lg:px-2 lg:space-y-4">
-              <Sidebar dispatch={dispatch}/>
+              <Sidebar dispatch={dispatch} />
             </div>
             <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {
-            
-                state.map((product, index) => (
-                  <ProductCard product={product} key={index} />
-                ))
-            }
+              {state.map((product, index) => (
+                <ProductCard product={product} key={index} />
+              ))}
             </div>
           </div>
         </div>

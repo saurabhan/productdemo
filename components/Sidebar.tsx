@@ -10,6 +10,7 @@ const Sidebar = (props: Props) => {
     <div>
         <h1>Fliters</h1>
         <div className='flex flex-col'>
+            <button onClick={() => dispatch("clear")}>Clear Filters</button>
             <div className='flex flex-col'>
                 <h2>Price</h2>
                 <div className='flex space-x-2'>
